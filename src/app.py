@@ -59,7 +59,7 @@ app.layout = html.Div(
     # Histogram for Age Distribution per Congress
     dbc.Row([
         html.Div([
-            html.P(children="This is a histogram of the ages of all congresspeople per congress. Use the slider to select a congress. Note the interquartile age difference is indicated.",
+            html.P(children="This is a histogram of the ages of all congresspeople per congress. Use the slider to select a congress. Note the interquartile age difference is indicated. <strong>When this app is viewed on Render, this histogram will lag.</strong>",
                    className="card-header",
             ),
             
