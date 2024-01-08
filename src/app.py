@@ -47,6 +47,9 @@ app.layout = html.Div(
         html.Div('Congress Age and Service', className="text-primary text-center fs-3", style={"margin": "10px"}),
         html.P(children="We explore the aspects of age and length of service of the United States Congress from 1919 to 2023 (or Congress 66 to 118).",
                style={'text-align': 'center'}), 
+        html.P(children="When this app is viewed on Render, expect some lag.",
+                   style={"font-weight": "bold"},
+            ),
     ]),
 
     # Average Ages vs Time Graph
@@ -61,10 +64,6 @@ app.layout = html.Div(
         html.Div([
             html.P(children="This is a histogram of the ages of all congresspeople per congress. Use the slider to select a congress. Note the interquartile age difference is indicated.",
                    className="card-header",
-            ),
-            
-            html.P(children="When this app is viewed on Render, this histogram will lag.",
-                   style={"font-weight": "bold"},
             ),
             
             # Slider for selecting congress
